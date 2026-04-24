@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Point_Of_Sale
 {
-    public partial class SalesReport : Form
+    public partial class EditUser : Form
     {
-        public SalesReport()
+        public EditUser()
         {
             InitializeComponent();
         }
@@ -20,7 +20,7 @@ namespace Point_Of_Sale
         private void label10_Click(object sender, EventArgs e)
         {
             // close button
-            this.Hide();
+            this.Close();
         }
     }
 }

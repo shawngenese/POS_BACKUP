@@ -30,15 +30,21 @@ namespace Point_Of_Sale
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string username = txtUsername.Text;
-            string password = txtPassword.Text;
+            string username = txtUsername.Text.Trim();
+            string password = txtPassword.Text.Trim();
+
 
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
-                MessageBox.Show("Please enter both username and password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                lblMessage.Text = "Please enter both username and password.";
+                //MessageBox.Show("Please enter both username and password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            
+            else
+            {
+                lblMessage.Text = "";
+            }
+
             ConnectionDB db = new ConnectionDB();
 
             try
@@ -63,7 +69,10 @@ namespace Point_Of_Sale
                 }
                 else
                 {
-                    MessageBox.Show("Invalid username or password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    //MessageBox.Show("Invalid username or password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    lblMessage.Text = "         Invalid username or password.";
+                    txtUsername.Text = "";
+                    txtPassword.Text = "";
                     return;
                 }
 

@@ -45,6 +45,7 @@
             button1 = new Button();
             button2 = new Button();
             dateTimePicker1 = new DateTimePicker();
+            label10 = new Label();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
@@ -242,12 +243,25 @@
             dateTimePicker1.TabIndex = 16;
             dateTimePicker1.TabStop = false;
             // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label10.ForeColor = Color.Red;
+            label10.Location = new Point(1107, 9);
+            label10.Name = "label10";
+            label10.Size = new Size(28, 21);
+            label10.TabIndex = 21;
+            label10.Text = " X ";
+            label10.Click += label10_Click;
+            // 
             // SalesReport
             // 
             AutoScaleDimensions = new SizeF(7F, 18F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
             ClientSize = new Size(1147, 611);
+            Controls.Add(label10);
             Controls.Add(dateTimePicker1);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -261,6 +275,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 4, 3, 4);
             Name = "SalesReport";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "SalesReport";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -294,5 +309,6 @@
         private Button button1;
         private Button button2;
         private DateTimePicker dateTimePicker1;
+        private Label label10;
     }
 }

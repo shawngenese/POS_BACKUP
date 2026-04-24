@@ -1,3 +1,5 @@
+using POS_System;
+
 namespace Point_Of_Sale
 {
     internal static class Program

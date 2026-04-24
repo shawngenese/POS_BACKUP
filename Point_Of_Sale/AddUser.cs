@@ -8,19 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Point_Of_Sale
+namespace POS_System
 {
-    public partial class SalesReport : Form
+    public partial class Add_and_Edit_User : Form
     {
-        public SalesReport()
+        public Add_and_Edit_User()
         {
             InitializeComponent();
         }
-
         private void label10_Click(object sender, EventArgs e)
         {
             // close button
-            this.Hide();
+            this.Close();
         }
     }
 }

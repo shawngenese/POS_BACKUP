@@ -42,6 +42,7 @@
             label5 = new Label();
             label6 = new Label();
             btnLogin = new Button();
+            lblMessage = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
@@ -51,7 +52,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Trebuchet MS", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(103, 97);
+            label1.Location = new Point(110, 106);
             label1.Name = "label1";
             label1.Size = new Size(184, 37);
             label1.TabIndex = 0;
@@ -62,7 +63,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = SystemColors.ControlDarkDark;
-            label2.Location = new Point(100, 134);
+            label2.Location = new Point(103, 143);
             label2.Name = "label2";
             label2.Size = new Size(191, 22);
             label2.TabIndex = 1;
@@ -196,12 +197,25 @@
             btnLogin.UseVisualStyleBackColor = false;
             btnLogin.Click += btnLogin_Click;
             // 
+            // lblMessage
+            // 
+            lblMessage.AutoSize = true;
+            lblMessage.BackColor = Color.WhiteSmoke;
+            lblMessage.Font = new Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblMessage.ForeColor = Color.Red;
+            lblMessage.Location = new Point(76, 175);
+            lblMessage.Name = "lblMessage";
+            lblMessage.Size = new Size(0, 18);
+            lblMessage.TabIndex = 15;
+            lblMessage.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 18F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
             ClientSize = new Size(735, 697);
+            Controls.Add(lblMessage);
             Controls.Add(btnLogin);
             Controls.Add(label6);
             Controls.Add(label5);
@@ -244,5 +258,6 @@
         private Label label6;
         private TextBox txtPassword;
         private Button btnLogin;
+        private Label lblMessage;
     }
 }

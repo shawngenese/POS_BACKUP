@@ -30,12 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             panel1 = new Panel();
-            button7 = new Button();
-            button6 = new Button();
-            button5 = new Button();
-            button4 = new Button();
-            button3 = new Button();
-            button2 = new Button();
+            btnLogout = new Button();
+            btnUsers = new Button();
+            btnSalesReports = new Button();
+            btnCategories = new Button();
+            btnProducts = new Button();
             panel2 = new Panel();
             label1 = new Label();
             button1 = new Button();
@@ -83,12 +82,11 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(0, 0, 64);
-            panel1.Controls.Add(button7);
-            panel1.Controls.Add(button6);
-            panel1.Controls.Add(button5);
-            panel1.Controls.Add(button4);
-            panel1.Controls.Add(button3);
-            panel1.Controls.Add(button2);
+            panel1.Controls.Add(btnLogout);
+            panel1.Controls.Add(btnUsers);
+            panel1.Controls.Add(btnSalesReports);
+            panel1.Controls.Add(btnCategories);
+            panel1.Controls.Add(btnProducts);
             panel1.Controls.Add(panel2);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(button1);
@@ -98,101 +96,90 @@
             panel1.Size = new Size(217, 702);
             panel1.TabIndex = 0;
             // 
-            // button7
+            // btnLogout
             // 
-            button7.BackColor = Color.FromArgb(0, 0, 64);
-            button7.FlatAppearance.BorderSize = 0;
-            button7.FlatStyle = FlatStyle.Flat;
-            button7.Font = new Font("Trebuchet MS", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button7.ForeColor = Color.White;
-            button7.ImageAlign = ContentAlignment.MiddleLeft;
-            button7.Location = new Point(12, 622);
-            button7.Margin = new Padding(3, 4, 3, 4);
-            button7.Name = "button7";
-            button7.Size = new Size(196, 66);
-            button7.TabIndex = 10;
-            button7.Text = "Logout";
-            button7.UseVisualStyleBackColor = false;
+            btnLogout.BackColor = Color.FromArgb(0, 0, 64);
+            btnLogout.FlatAppearance.BorderSize = 0;
+            btnLogout.FlatStyle = FlatStyle.Flat;
+            btnLogout.Font = new Font("Trebuchet MS", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnLogout.ForeColor = Color.White;
+            btnLogout.ImageAlign = ContentAlignment.MiddleLeft;
+            btnLogout.Location = new Point(12, 622);
+            btnLogout.Margin = new Padding(3, 4, 3, 4);
+            btnLogout.Name = "btnLogout";
+            btnLogout.Size = new Size(196, 66);
+            btnLogout.TabIndex = 10;
+            btnLogout.Text = "Logout";
+            btnLogout.UseVisualStyleBackColor = false;
+            btnLogout.Click += btnLogout_Click;
             // 
-            // button6
+            // btnUsers
             // 
-            button6.BackColor = Color.FromArgb(0, 0, 64);
-            button6.FlatAppearance.BorderSize = 0;
-            button6.FlatStyle = FlatStyle.Flat;
-            button6.Font = new Font("Trebuchet MS", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button6.ForeColor = Color.White;
-            button6.ImageAlign = ContentAlignment.MiddleLeft;
-            button6.Location = new Point(12, 496);
-            button6.Margin = new Padding(3, 4, 3, 4);
-            button6.Name = "button6";
-            button6.Size = new Size(196, 66);
-            button6.TabIndex = 9;
-            button6.Text = "Settings";
-            button6.UseVisualStyleBackColor = false;
+            btnUsers.BackColor = Color.FromArgb(0, 0, 64);
+            btnUsers.FlatAppearance.BorderSize = 0;
+            btnUsers.FlatStyle = FlatStyle.Flat;
+            btnUsers.Font = new Font("Trebuchet MS", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnUsers.ForeColor = Color.White;
+            btnUsers.ImageAlign = ContentAlignment.MiddleLeft;
+            btnUsers.Location = new Point(12, 422);
+            btnUsers.Margin = new Padding(3, 4, 3, 4);
+            btnUsers.Name = "btnUsers";
+            btnUsers.Size = new Size(196, 66);
+            btnUsers.TabIndex = 8;
+            btnUsers.Text = "Users";
+            btnUsers.UseVisualStyleBackColor = false;
+            btnUsers.Click += btnUsers_Click;
             // 
-            // button5
+            // btnSalesReports
             // 
-            button5.BackColor = Color.FromArgb(0, 0, 64);
-            button5.FlatAppearance.BorderSize = 0;
-            button5.FlatStyle = FlatStyle.Flat;
-            button5.Font = new Font("Trebuchet MS", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button5.ForeColor = Color.White;
-            button5.ImageAlign = ContentAlignment.MiddleLeft;
-            button5.Location = new Point(12, 422);
-            button5.Margin = new Padding(3, 4, 3, 4);
-            button5.Name = "button5";
-            button5.Size = new Size(196, 66);
-            button5.TabIndex = 8;
-            button5.Text = "Users";
-            button5.UseVisualStyleBackColor = false;
+            btnSalesReports.BackColor = Color.FromArgb(0, 0, 64);
+            btnSalesReports.FlatAppearance.BorderSize = 0;
+            btnSalesReports.FlatStyle = FlatStyle.Flat;
+            btnSalesReports.Font = new Font("Trebuchet MS", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSalesReports.ForeColor = Color.White;
+            btnSalesReports.ImageAlign = ContentAlignment.MiddleLeft;
+            btnSalesReports.Location = new Point(12, 348);
+            btnSalesReports.Margin = new Padding(3, 4, 3, 4);
+            btnSalesReports.Name = "btnSalesReports";
+            btnSalesReports.Size = new Size(196, 66);
+            btnSalesReports.TabIndex = 7;
+            btnSalesReports.Text = "Sales Reports";
+            btnSalesReports.UseVisualStyleBackColor = false;
+            btnSalesReports.Click += btnSalesReports_Click;
             // 
-            // button4
+            // btnCategories
             // 
-            button4.BackColor = Color.FromArgb(0, 0, 64);
-            button4.FlatAppearance.BorderSize = 0;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Trebuchet MS", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button4.ForeColor = Color.White;
-            button4.ImageAlign = ContentAlignment.MiddleLeft;
-            button4.Location = new Point(12, 348);
-            button4.Margin = new Padding(3, 4, 3, 4);
-            button4.Name = "button4";
-            button4.Size = new Size(196, 66);
-            button4.TabIndex = 7;
-            button4.Text = "Sales Reports";
-            button4.UseVisualStyleBackColor = false;
+            btnCategories.BackColor = Color.FromArgb(0, 0, 64);
+            btnCategories.FlatAppearance.BorderSize = 0;
+            btnCategories.FlatStyle = FlatStyle.Flat;
+            btnCategories.Font = new Font("Trebuchet MS", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnCategories.ForeColor = Color.White;
+            btnCategories.ImageAlign = ContentAlignment.MiddleLeft;
+            btnCategories.Location = new Point(12, 274);
+            btnCategories.Margin = new Padding(3, 4, 3, 4);
+            btnCategories.Name = "btnCategories";
+            btnCategories.Size = new Size(196, 66);
+            btnCategories.TabIndex = 6;
+            btnCategories.Text = "Categories";
+            btnCategories.UseVisualStyleBackColor = false;
+            btnCategories.Click += btnCategories_Click;
             // 
-            // button3
+            // btnProducts
             // 
-            button3.BackColor = Color.FromArgb(0, 0, 64);
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Trebuchet MS", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.ForeColor = Color.White;
-            button3.ImageAlign = ContentAlignment.MiddleLeft;
-            button3.Location = new Point(12, 274);
-            button3.Margin = new Padding(3, 4, 3, 4);
-            button3.Name = "button3";
-            button3.Size = new Size(196, 66);
-            button3.TabIndex = 6;
-            button3.Text = "Categories";
-            button3.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            button2.BackColor = Color.FromArgb(0, 0, 64);
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Trebuchet MS", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.White;
-            button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(12, 200);
-            button2.Margin = new Padding(3, 4, 3, 4);
-            button2.Name = "button2";
-            button2.Size = new Size(196, 66);
-            button2.TabIndex = 5;
-            button2.Text = "Products";
-            button2.UseVisualStyleBackColor = false;
+            btnProducts.BackColor = Color.FromArgb(0, 0, 64);
+            btnProducts.FlatAppearance.BorderSize = 0;
+            btnProducts.FlatStyle = FlatStyle.Flat;
+            btnProducts.Font = new Font("Trebuchet MS", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnProducts.ForeColor = Color.White;
+            btnProducts.ImageAlign = ContentAlignment.MiddleLeft;
+            btnProducts.Location = new Point(12, 200);
+            btnProducts.Margin = new Padding(3, 4, 3, 4);
+            btnProducts.Name = "btnProducts";
+            btnProducts.Size = new Size(196, 66);
+            btnProducts.TabIndex = 5;
+            btnProducts.Text = "Products";
+            btnProducts.UseVisualStyleBackColor = false;
+            btnProducts.Click += btnProducts_Click;
             // 
             // panel2
             // 
@@ -561,6 +548,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 4, 3, 4);
             Name = "Dashboard";
+            StartPosition = FormStartPosition.Manual;
             Text = "Dashboard";
             Load += Dashboard_Load;
             panel1.ResumeLayout(false);
@@ -591,12 +579,11 @@
         private Label label1;
         private Button button1;
         private Panel panel3;
-        private Button button7;
-        private Button button6;
-        private Button button5;
-        private Button button4;
-        private Button button3;
-        private Button button2;
+        private Button btnLogout;
+        private Button btnUsers;
+        private Button btnSalesReports;
+        private Button btnCategories;
+        private Button btnProducts;
         private Panel panel2;
         private Label label2;
         private Panel panel4;

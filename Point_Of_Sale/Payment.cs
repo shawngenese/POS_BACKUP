@@ -8,19 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Point_Of_Sale
+namespace POS_System
 {
-    public partial class SalesReport : Form
+    public partial class Payment : Form
     {
-        public SalesReport()
+        public Payment()
         {
             InitializeComponent();
         }
 
-        private void label10_Click(object sender, EventArgs e)
-        {
-            // close button
-            this.Hide();
-        }
     }
 }

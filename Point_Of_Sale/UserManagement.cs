@@ -16,5 +16,11 @@ namespace Point_Of_Sale
         {
             InitializeComponent();
         }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+            //close button
+            this.Hide();
+        }
     }
 }

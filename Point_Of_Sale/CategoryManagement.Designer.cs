@@ -31,6 +31,7 @@
             label3 = new Label();
             button1 = new Button();
             dataGridView1 = new DataGridView();
+            label5 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -69,12 +70,25 @@
             dataGridView1.Size = new Size(821, 466);
             dataGridView1.TabIndex = 19;
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.ForeColor = Color.Red;
+            label5.Location = new Point(852, 9);
+            label5.Name = "label5";
+            label5.Size = new Size(28, 21);
+            label5.TabIndex = 20;
+            label5.Text = " X ";
+            label5.Click += label5_Click;
+            // 
             // CategoryManagement
             // 
             AutoScaleDimensions = new SizeF(7F, 18F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
             ClientSize = new Size(892, 664);
+            Controls.Add(label5);
             Controls.Add(dataGridView1);
             Controls.Add(button1);
             Controls.Add(label3);
@@ -82,6 +96,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 4, 3, 4);
             Name = "CategoryManagement";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "CategoryManagement";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
@@ -93,5 +108,6 @@
         private Label label3;
         private Button button1;
         private DataGridView dataGridView1;
+        private Label label5;
     }
 }

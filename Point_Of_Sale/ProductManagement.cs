@@ -8,19 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Point_Of_Sale
+namespace WinFormsApp4
 {
-    public partial class SalesReport : Form
+    public partial class ProductManagement : Form
     {
-        public SalesReport()
+        public ProductManagement()
         {
             InitializeComponent();
         }
 
         private void label10_Click(object sender, EventArgs e)
         {
-            // close button
-            this.Hide();
+            //close button
+            this.Close();
         }
     }
 }

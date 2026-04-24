@@ -29,8 +29,9 @@
         private void InitializeComponent()
         {
             dataGridView1 = new DataGridView();
-            button1 = new Button();
+            btnAddUser = new Button();
             label3 = new Label();
+            label10 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -43,20 +44,20 @@
             dataGridView1.Size = new Size(821, 466);
             dataGridView1.TabIndex = 22;
             // 
-            // button1
+            // btnAddUser
             // 
-            button1.BackColor = SystemColors.Highlight;
-            button1.FlatAppearance.BorderColor = SystemColors.ControlDarkDark;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Trebuchet MS", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(736, 50);
-            button1.Margin = new Padding(3, 4, 3, 4);
-            button1.Name = "button1";
-            button1.Size = new Size(124, 42);
-            button1.TabIndex = 21;
-            button1.Text = "Add Category";
-            button1.UseVisualStyleBackColor = false;
+            btnAddUser.BackColor = SystemColors.Highlight;
+            btnAddUser.FlatAppearance.BorderColor = SystemColors.ControlDarkDark;
+            btnAddUser.FlatStyle = FlatStyle.Flat;
+            btnAddUser.Font = new Font("Trebuchet MS", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnAddUser.ForeColor = Color.White;
+            btnAddUser.Location = new Point(736, 50);
+            btnAddUser.Margin = new Padding(3, 4, 3, 4);
+            btnAddUser.Name = "btnAddUser";
+            btnAddUser.Size = new Size(124, 42);
+            btnAddUser.TabIndex = 21;
+            btnAddUser.Text = "Add User";
+            btnAddUser.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
@@ -65,17 +66,30 @@
             label3.ForeColor = SystemColors.Highlight;
             label3.Location = new Point(39, 50);
             label3.Name = "label3";
-            label3.Size = new Size(175, 40);
+            label3.Size = new Size(99, 40);
             label3.TabIndex = 20;
-            label3.Text = "Categories";
+            label3.Text = "Users";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label10.ForeColor = Color.Red;
+            label10.Location = new Point(852, 9);
+            label10.Name = "label10";
+            label10.Size = new Size(28, 21);
+            label10.TabIndex = 23;
+            label10.Text = " X ";
+            label10.Click += label10_Click;
             // 
             // UserManagement
             // 
             AutoScaleDimensions = new SizeF(7F, 18F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(892, 664);
+            Controls.Add(label10);
             Controls.Add(dataGridView1);
-            Controls.Add(button1);
+            Controls.Add(btnAddUser);
             Controls.Add(label3);
             Font = new Font("Trebuchet MS", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             FormBorderStyle = FormBorderStyle.None;
@@ -90,7 +104,8 @@
         #endregion
 
         private DataGridView dataGridView1;
-        private Button button1;
+        private Button btnAddUser;
         private Label label3;
+        private Label label10;
     }
 }

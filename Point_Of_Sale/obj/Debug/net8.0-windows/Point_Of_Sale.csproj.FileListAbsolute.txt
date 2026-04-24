@@ -36,7 +36,7 @@ C:\Users\shawn\source\repos\Point_Of_Sale\Point_Of_Sale\bin\Debug\net8.0-windows
 C:\Users\shawn\source\repos\Point_Of_Sale\Point_Of_Sale\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
 C:\Users\shawn\source\repos\Point_Of_Sale\Point_Of_Sale\obj\Debug\net8.0-windows\Point_Of_Sale.csproj.AssemblyReference.cache
 C:\Users\shawn\source\repos\Point_Of_Sale\Point_Of_Sale\obj\Debug\net8.0-windows\Point_Of.B46CD034.Up2Date
-C:\Users\shawn\source\repos\Point_Of_Sale\Point_Of_Sale\obj\Debug\net8.0-windows\WinFormsApp4.ProductManagement.resources
 C:\Users\shawn\source\repos\Point_Of_Sale\Point_Of_Sale\obj\Debug\net8.0-windows\Point_Of_Sale.EditUser.resources
 C:\Users\shawn\source\repos\Point_Of_Sale\Point_Of_Sale\obj\Debug\net8.0-windows\POS_System.Payment.resources
 C:\Users\shawn\source\repos\Point_Of_Sale\Point_Of_Sale\obj\Debug\net8.0-windows\POS_System.Add_and_Edit_User.resources
+C:\Users\shawn\source\repos\Point_Of_Sale\Point_Of_Sale\obj\Debug\net8.0-windows\Point_Of_Sale.ProductManagement.resources
